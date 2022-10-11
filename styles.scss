@@ -36,10 +36,12 @@ body {
   background-image: url("background-donut.jpg");
   max-width: 100vh;
   display: flex;
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
 }
 
 .score-board {
-  background-color: pink;
+  background-color: rgb(227, 227, 163);
   border-radius: 10px;
   margin-top: 200px;
   margin-left: 200px;
@@ -51,7 +53,7 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(#FFB6C1, #FFC0CB);
+  background-image: linear-gradient(#BD979D, #FFF5C0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
   color: #85796b;
 }
