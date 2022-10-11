@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const squares = []
     let score = 0
     
-    const candyColors = [
+    const donutColors = [
         'url(images/pink-donut.png)',
         'url(images/yellow-donut.png)',
         'url(images/orange-donut.png)',
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const square = document.createElement('div')
         square.setAttribute('draggable', true)
         square.setAttribute('id', i)
-        let randomColor = Math.floor(Math.random() * candyColors.length)
-        square.style.backgroundImage = candyColors[randomColor]
+        let randomColor = Math.floor(Math.random() * donutColors.length)
+        square.style.backgroundImage = donutColors[randomColor]
         grid.appendChild(square)
         squares.push(square)
       }
@@ -88,8 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const firstRow = [0, 1, 2, 3, 4, 5, 6, 7]
                 const isFirstRow = firstRow.includes(i)
                 if (isFirstRow && (squares[i].style.backgroundImage === '')) {
-                  let randomColor = Math.floor(Math.random() * candyColors.length)
-                  squares[i].style.backgroundImage = candyColors[randomColor]
+                  let randomColor = Math.floor(Math.random() * donutColors.length)
+                  squares[i].style.backgroundImage = donutColors[randomColor]
                 }
             }
         }
